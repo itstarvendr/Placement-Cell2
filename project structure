@@ -1,0 +1,42 @@
+- app
+  - controllers
+    - authController.js
+    - studentController.js
+    - interviewController.js
+    - resultController.js
+    - externalJobsController.js
+  - models
+    - Batch.js
+    - Student.js
+    - CourseScores.js
+    - Interview.js
+    - Results.js
+  - routes
+    - index.js
+    - authRoutes.js
+    - studentRoutes.js
+    - interviewRoutes.js
+    - resultRoutes.js
+    - externalJobsRoutes.js
+  - views
+    - auth
+      - signup.ejs
+      - login.ejs
+    - students
+      - index.ejs
+      - new.ejs
+    - interviews
+      - index.ejs
+      - new.ejs
+      - allocate.ejs
+      - students.ejs
+    - results
+      - interviewStudents.ejs
+    - externalJobs
+      - index.ejs
+  - public
+    - css
+      - style.css
+  - app.js
+- package.json
+- README.md
