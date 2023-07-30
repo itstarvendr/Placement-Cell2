@@ -1,0 +1,22 @@
+/* public/css/style.css */
+/* Add your CSS styles here to customize the look and feel of your application */
+/* For example: */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    color: #750e0e;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,28 @@
+<!-- results/interviewStudents.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Students in Interview</title>
+</head>
+<body>
+  <h1>View Students in Interview</h1>
+  <h2><%= interview.company %> - Date: <%= interview.date %></h2>
+  <!-- Add the list of students in the interview with result form -->
+  <form action="/results/<%= interview._id %>/students" method="post">
+    <ul>
+      <% interview.students.forEach((student) => { %>
+        <li>
+          <%= student.name %> - <%= student.college %> - Result:
+          <select name="results[<%= student._id %>]" required>
+            <option value="PASS" <%= student.result === 'PASS' ? 'selected' : '' %>>PASS</option>
+            <option value="FAIL" <%= student.result === 'FAIL' ? 'selected' : '' %>>FAIL</option>
+            <option value="On Hold" <%= student.result === 'On Hold' ? 'selected' : '' %>>On Hold</option>
+            <option value="Didn’t Attempt" <%= student.result === 'Didn’t Attempt' ? 'selected' : '' %>>Didn’t Attempt</option>
+          </select>
+        </li>
+      <% }); %>
+    </ul>
+    <button type="submit">Save Results</button>
+  </form>
+</body>
+</html>

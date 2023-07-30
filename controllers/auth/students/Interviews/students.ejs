@@ -1,0 +1,17 @@
+<!-- interviews/students.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Students in Interview</title>
+</head>
+<body>
+  <h1>View Students in Interview</h1>
+  <h2><%= interview.company %> - Date: <%= interview.date %></h2>
+  <!-- Add the list of students in the interview here -->
+  <ul>
+    <% interview.students.forEach((student) => { %>
+      <li><%= student.name %> - <%= student.college %> - Result: <%= student.result %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- students/new.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add New Student</title>
+</head>
+<body>
+  <h1>Add New Student</h1>
+  <!-- Add the form to add a new student here -->
+  <form action="/students/new" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="college">College:</label>
+    <input type="text" id="college" name="college" required><br>
+
+    <label for="status">Status:</label>
+    <select id="status" name="status" required>
+      <option value="placed">Placed</option>
+      <option value="not_placed">Not Placed</option>
+    </select><br>
+
+    <button type="submit">Add Student</button>
+  </form>
+</body>
+</html>

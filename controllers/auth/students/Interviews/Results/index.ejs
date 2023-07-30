@@ -1,0 +1,20 @@
+<!-- externalJobs/index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>External Jobs List</title>
+</head>
+<body>
+  <h1>External Jobs List</h1>
+  <!-- Add the list of external jobs here -->
+  <ul>
+    <% externalJobs.forEach((job) => { %>
+      <li>
+        <strong><%= job.title %></strong> - Company: <%= job.company %><br>
+        Location: <%= job.location %> - Type: <%= job.type %><br>
+        Apply Link: <a href="<%= job.url %>" target="_blank">Apply Now</a>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>

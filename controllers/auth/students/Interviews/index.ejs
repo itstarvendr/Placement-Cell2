@@ -1,0 +1,20 @@
+<!-- interviews/index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List of Interviews</title>
+</head>
+<body>
+  <h1>List of Interviews</h1>
+  <!-- Add the list of interviews here -->
+  <ul>
+    <% interviews.forEach((interview) => { %>
+      <li>
+        <strong><%= interview.company %></strong> - Date: <%= interview.date %>
+        <a href="/interviews/<%= interview._id %>/allocate">Allocate Students</a>
+        <a href="/results/<%= interview._id %>/students">View Students</a>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>

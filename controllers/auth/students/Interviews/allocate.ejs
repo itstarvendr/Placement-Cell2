@@ -1,0 +1,21 @@
+<!-- interviews/allocate.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Allocate Students to Interview</title>
+</head>
+<body>
+  <h1>Allocate Students to Interview</h1>
+  <!-- Add the form to allocate students to the interview here -->
+  <form action="/interviews/<%= interview._id %>/allocate" method="post">
+    <label for="students">Select Students:</label>
+    <select id="students" name="students" multiple required>
+      <% students.forEach((student) => { %>
+        <option value="<%= student._id %>"><%= student.name %> - <%= student.college %></option>
+      <% }); %>
+    </select><br>
+
+    <button type="submit">Allocate</button>
+  </form>
+</body>
+</html>
