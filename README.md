@@ -10,7 +10,6 @@ This is a web application for Team Career Camp to maintain a database of all the
 2. Navigate to the project directory: `cd career-camp-app`
 3. Install the dependencies: `npm install`
 4. Start the application: `npm start`
-5. Access the application in your browser at  'https://itstarvendr.github.io/Placement-Cell2/'
 ## Folder Structure
 
 The application follows the following folder structure:
